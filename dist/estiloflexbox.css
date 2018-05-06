@@ -21,11 +21,14 @@
 * {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img {
   width: 100%;
-  padding: 4px;
+  vertical-align: top;
 }
 
 .contenedor-fluido,
@@ -39,7 +42,7 @@ img {
   padding-left: 2rem;
 }
 
-.columnas {
+.fila {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: -webkit-box;
@@ -58,7 +61,7 @@ img {
   margin-left: -0.5rem;
 }
 
-.columnas.invertida {
+.fila.invertida {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
   -ms-flex-direction: row-reverse;
@@ -237,6 +240,36 @@ img {
   -webkit-box-ordinal-group: 2;
   -ms-flex-order: 1;
   order: 1;
+}
+
+/* #endregion */
+
+/* #region Pequeña */
+
+@media only screen and (min-width: 48em) {
+  .contenedor {
+    width: 49rem;
+  }
+}
+
+/* #endregion */
+
+/* #region Mediana */
+
+@media only screen and (min-width: 64em) {
+  .contenedor {
+    width: 65rem;
+  }
+}
+
+/* #endregion */
+
+/* #region Grande */
+
+@media only screen and (min-width: 75em) {
+  .contenedor {
+    width: 76rem;
+  }
 }
 
 /* #endregion */
